@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import { Categories, categoryState, toDoSeletor } from "../atoms";
 import ToDo from "./ToDo";
 import CreateToDo from "./CreateTodo";
@@ -21,9 +21,9 @@ function ToDoList() {
   useEffect(() => {
     const allBtnArr = ["btn1", "btn2", "btn3"];
     const nonTargetedBtnArr = allBtnArr.filter((item) => item !== currentClick);
-    document.getElementById(currentClick)!.style.backgroundColor = "teal";
+    document.getElementById(currentClick)!.classList.add("active");
     nonTargetedBtnArr.map((btn) => {
-      document.getElementById(btn)!.style.color = "white";
+      document.getElementById(btn)!.classList.remove("active");
       return null;
     });
   }, [currentClick]);
@@ -57,7 +57,7 @@ function ToDoList() {
       <h1>To Dos</h1>
 
       <ButtonWrapper>
-        <Buttons id='btn1' value={Categories.TO_DO} onClick={onInput}>
+        <Buttons id='btn1' className='active' value={Categories.TO_DO} onClick={onInput}>
           To Do
         </Buttons>
         <Buttons id='btn2' value={Categories.DOING} onClick={onInput}>
