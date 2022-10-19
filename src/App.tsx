@@ -33,7 +33,10 @@ footer, header, hgroup, main, menu, nav, section {
     display: none;
 }
 body {
+  /* position: absolute; left: 50%; transform: translateX(-50%); */
+  
   line-height: 1;
+
 }
 menu, ol, ul {
   list-style: none;
@@ -59,6 +62,33 @@ body {
   background-color:${(props) => props.theme.bgColor};
   color:${(props) => props.theme.textColor};
   line-height: 1.2;
+align-content: center;
+min-width: 50%;
+select {
+  
+}
+
+
+
+
+div{
+  margin-left:10px;
+  width: 400px; position: absolute; left: 50%; margin-left: -200px;
+  font-size: 25px;
+  
+}
+
+li{
+  margin-bottom: 10px;
+
+}
+span{
+  padding-right: 10px; 
+  font-size: 20px;
+}
+button{
+  margin-left: 5px;
+}
 }
 a {
   text-decoration:none;
