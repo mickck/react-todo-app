@@ -33,14 +33,9 @@ footer, header, hgroup, main, menu, nav, section {
     display: none;
 }
 body {
-  /* position: absolute; left: 50%; transform: translateX(-50%); */
-  
   line-height: 1;
+}
 
-}
-menu, ol, ul {
-  list-style: none;
-}
 blockquote, q {
   quotes: none;
 }
@@ -57,43 +52,112 @@ table {
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */    
+  padding: 0px 2rem;
+  max-width: 30rem;
+  margin: 0px auto;
   font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
   background-color:${(props) => props.theme.bgColor};
   color:${(props) => props.theme.textColor};
   line-height: 1.2;
-align-content: center;
-min-width: 50%;
-select {
-  
-}
+  min-height: 100vh;
+  overflow: hidden;
+width: 100vw;
 
 
 
 
 div{
   margin-left:10px;
-  width: 400px; position: absolute; left: 50%; margin-left: -200px;
   font-size: 25px;
+  width: 500px;
   
 }
+h1{
+  margin-top: 15px;
+  text-align: center;
+}
+input  {
+  margin-right: 10px;
+  width: 380px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+
+}
+
 
 li{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: darkgray;
+  padding: 5px;
+  border-radius: 10px;
+  word-break:break-all;
 
+  
 }
 span{
+  padding-left: 5px;
   padding-right: 10px; 
-  font-size: 20px;
+  font-size: 20px; 
 }
+
 button{
-  margin-left: 5px;
+  margin-left: 5px; 
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+  &:focus {
+ 
+  outline: 0;
 }
+&:hover{
+    cursor: pointer;
+    border: 1px solid #dadce0;
+    box-shadow: inset 1 1px 1px 0 rgb(0 0 0 / 10%);
+    background-color: tomato;
+    transition: ease-out 0.3s ;
+    
+  } 
+
 }
+
+
+
+}
+h1{
+  font-weight: bold;
+  font-size: 40px;
+  padding: 5px;
+  text-shadow: 1px 1px #3D3D3D;
+
+}
+
 a {
   text-decoration:none;
   color:inherit;
+
 }
+
+
+
+
 `;
 
 function App() {

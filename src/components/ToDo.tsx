@@ -18,10 +18,6 @@ function ToDo({ text, category, id }: ITodo) {
   };
 
   const onDelete = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const {
-      currentTarget: { name },
-    } = event;
-
     setToDos((oldToDos) => {
       const targetIndex = oldToDos.findIndex((toDO) => toDO.id === id);
 
