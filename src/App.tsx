@@ -55,7 +55,7 @@ body {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */    
-  padding: 0px 2rem;
+ 
   max-width: 30rem;
   margin: 0px auto;
   font-weight: 300;
