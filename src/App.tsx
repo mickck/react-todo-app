@@ -70,7 +70,7 @@ width: 100vw;
 
 
 div{
-  margin-left:10px;
+  
   font-size: 25px;
   width: 500px;
   
