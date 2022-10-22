@@ -56,7 +56,7 @@ body {
   /* justify-content: center; */
   /* align-items: center; */    
  
-  max-width: 30rem;
+  max-width: 35rem;
   margin: 0px auto;
   font-weight: 300;
   background-color:${(props) => props.theme.bgColor};
@@ -87,13 +87,14 @@ input  {
   border: 0;
   border-radius: 15px;
   outline: none;
-  padding-left: 10px;
   background-color: rgb(233, 233, 233);
 
 }
 
 
 li{
+  margin-left : 5px;
+  margin-right : 5px;
   margin-bottom: 15px;
   list-style: none;
   background-color: darkgray;
@@ -107,6 +108,7 @@ span{
   padding-left: 5px;
   padding-right: 10px; 
   font-size: 20px; 
+  
 }
 
 button{
